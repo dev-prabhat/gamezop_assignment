@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="px-5 md:px-[50px] bg-[var(--default-bg-color)]">
-      <div className="p-3">
+    <footer className="flex justify-center px-5 md:px-[50px] bg-[var(--default-bg-color)] w-full">
+      <div className="p-3 max-w-[1440px]">
         <div className="pt-[13px] pb-[19px]">
           <div className="relative w-[108px] aspect-[27/7]">
             <Image src="/gamezop-logo-dark.avif" fill alt="logo_image" />

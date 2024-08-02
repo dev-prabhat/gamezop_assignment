@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.className}>{children}</body>
+      <body className={`flex justify-center ${roboto.className} bg-[var(--category-section-color)]`}>{children}</body>
     </html>
   );
 }
