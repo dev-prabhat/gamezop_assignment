@@ -1,0 +1,25 @@
+{
+    "name": "Next-13 PWA",
+    "short_name": "PWA",
+    "theme_color": "#2196f3",
+    "background_color": "#2196f3",
+    "display": "standalone",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/",
+    "icons": [
+      {
+        "src": "icons/icon-16x16.png",
+        "sizes": "16x16",
+        "type": "image/png",
+        "purpose": "maskable any"
+      },
+      {
+        "src": "icons/icon-32x32.png",
+        "sizes": "32x32",
+        "type": "image/png",
+        "purpose": "maskable any"
+      }
+    ],
+    "splash_pages": null
+  }
