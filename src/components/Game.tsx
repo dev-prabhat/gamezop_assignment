@@ -5,17 +5,19 @@ import { Games } from "@/types";
 import { separateGamesByCategory } from "@/utils";
 import AnimatedImages from "./AnimatedImages";
 import { imagesAnimation } from "@/data";
+import Carousel from "./Carousel";
 
 export default async function Game() {
   const gameData: Promise<Games> = await getAllGames();
   const { games } = await gameData;
   const categorizedGames = separateGamesByCategory(games);
   return (
-    <div className="flex flex-wrap gap-2 p-2 bg-[var(--category-section-color)]">
+   <div className="flex justify-center bg-[var(--category-section-color)] w-full">
+     <div className="flex flex-wrap gap-2 py-4 px-6 2xl:px-10 w-full 2xl:max-w-[1440px]">
       {!!Object.keys(categorizedGames).length &&
         Object.keys(categorizedGames).map((ele, index) => (
-          <div key={ele}>
-            <div className="flex justify-between">
+          <div key={ele} className="w-full">
+            <div className="hidden 2xl:flex justify-between ">
               {index % 2 === 1 &&
                 Object.keys(imagesAnimation).map((ele) => (
                   <div key={ele}>
@@ -32,15 +34,18 @@ export default async function Game() {
                   {ele}
                 </h1>
               </div>
-              <div className="flex gap-5 justify-between">
-                {!!categorizedGames[ele].length &&
+                <Carousel>
+                {!!categorizedGames[ele]&&
                   categorizedGames[ele]
-                    .splice(0, 6)
-                    .map((ele) => <GameCard key={ele.code} {...ele} />)}
-              </div>
+                    .splice(0, 15)
+                    .map((ele) => (
+                      <GameCard key={ele.code} {...ele} />
+                    ))}
+                  </Carousel>
             </div>
           </div>
         ))}
     </div>
+   </div>
   );
 }

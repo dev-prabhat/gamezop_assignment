@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 
 const Home = () => {
   return (
-    <main className="relative">
+    <main className="relative w-full">
       <Header />
       <Game />
       <Footer />

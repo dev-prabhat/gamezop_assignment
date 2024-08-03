@@ -1,3 +1,5 @@
+import { ReactElement } from "react";
+
 export type Games = Readonly<{
   games: Game[];
 }>;
@@ -54,3 +56,7 @@ export type AnimatedImagesProps = {
   src: string[];
   slides: string
 };
+
+export type CarouselProp = Readonly<{
+  children: ReactElement[]
+}>
