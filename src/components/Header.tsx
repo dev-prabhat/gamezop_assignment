@@ -1,11 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
 import CategoryPill from "./CategoryPill";
+import Carousel from "./Carousel";
 import SearchBox from "./SearchBox";
 import getAllGames from "@/lib/getAllGames";
 import { separateGamesByCategory } from "@/utils";
 import { Games } from "@/types";
-import Link from "next/link";
-import Carousel from "./Carousel";
 
 export default async function Header() {
   const gameData: Promise<Games> = await getAllGames();

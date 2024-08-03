@@ -6,10 +6,7 @@ import Puzzle from "./Puzzle";
 import Sports from "./Sports";
 import Strategy from "./Strategy";
 import Featured from "./Featured";
-
-type IconProps = Readonly< {
-  name?: string;
-}>
+import { IconProps } from "@/types";
 
 export const Icons: {
   [key: string]: (props: IconProps) => React.JSX.Element;

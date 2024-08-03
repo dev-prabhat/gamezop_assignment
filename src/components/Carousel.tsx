@@ -1,8 +1,8 @@
 "use client";
 
-import { CarouselProp } from "@/types";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import { CarouselProp } from "@/types";
 
 import "swiper/css";
 import 'swiper/css/navigation';

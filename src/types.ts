@@ -60,3 +60,17 @@ export type AnimatedImagesProps = {
 export type CarouselProp = Readonly<{
   children: ReactElement[]
 }>
+
+export type CategoryPageProps = Readonly<{
+  params: {
+    name: string;
+  };
+}>;
+
+export type CategoryPillProps = Readonly<{
+  name: string;
+}>
+
+export type IconProps = Readonly< {
+  name?: string;
+}>

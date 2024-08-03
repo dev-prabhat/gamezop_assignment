@@ -3,15 +3,9 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import getAllGames from "@/lib/getAllGames";
 import Icon from "@/SVGImages/Icon";
-import { Games } from "@/types";
+import { CategoryPageProps, Games } from "@/types";
 import { separateGamesByCategory } from "@/utils";
 import { GameCard } from "@/components/GameCard";
-
-type CategoryPageProps = {
-  params: {
-    name: string;
-  };
-};
 
 export default async function CategoryPage({
   params: { name },

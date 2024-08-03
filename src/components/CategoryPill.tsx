@@ -1,9 +1,6 @@
-import Icon from "@/SVGImages/Icon";
 import Link from "next/link";
-
-interface CategoryPillProps {
-  name: string;
-}
+import Icon from "@/SVGImages/Icon";
+import { CategoryPillProps } from "@/types";
 
 export default function CategoryPill({ name }: CategoryPillProps) {
   return (

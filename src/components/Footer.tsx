@@ -1,6 +1,6 @@
-import { footerLinks, footerDescriptionText } from "@/data";
 import Image from "next/image";
 import Link from "next/link";
+import { footerLinks, footerDescriptionText } from "@/data";
 
 export default function Footer() {
   return (
