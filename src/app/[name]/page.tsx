@@ -35,7 +35,7 @@ export default async function CategoryPage({
               {decodedRouteName}
             </h1>
           </div>
-          <div className="grid place-items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-10">
+          <div className="grid place-items-center grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-16 md:gap-10">
             {singleCategoryGames?.map((ele) => (
               <GameCard key={ele.code} {...ele} />
             ))}

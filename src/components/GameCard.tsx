@@ -5,9 +5,9 @@ import React from "react";
 
 export const GameCard = (cardDetails: Game) => {
   return (
-    <div key={cardDetails.code} className="max-w-[187px] mb-5">
+    <div key={cardDetails.code} className="max-w-[100px] md:max-w-[187px] mb-5">
       <Link href={cardDetails.url} target="_blank">
-        <div className="relative w-[187px] aspect-[1]">
+        <div className="relative w-[100px] md:w-[187px] aspect-[1]">
           <Image
             className="object-cover rounded-3xl"
             src={cardDetails.assets.square}
