@@ -1,7 +1,5 @@
-"use client";
-
+import CricInfo from "@/SVGImages/CricInfo";
 import Search from "@/SVGImages/Search";
-import Image from "next/image";
 
 export default function SearchBox() {
 
@@ -14,13 +12,7 @@ export default function SearchBox() {
         className="px-7 w-full h-8 md:h-10 rounded-full bg-[var(--default-dark-blue-color)]"
         placeholder="Search for game"
       />
-      <div className="relative w-10 aspect-[1]">
-        <Image
-          src="https://static.gamezop.com/comet/assets/img/criczop/icon.svg"
-          fill
-          alt="Criczop"
-        />
-      </div>
+      <CricInfo />
     </div>
   );
 }
