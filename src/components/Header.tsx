@@ -18,7 +18,7 @@ export default async function Header() {
         <div className="flex justify-between px-3 md:px-5 xl:px-10 h-14 md:h-20 items-center w-full">
           <div className="relative w-[100px] md:w-[200px] aspect-[43/12]">
             <Link href="/">
-              <Image src="/gamezop-logo-dark.avif" fill alt="logo_image" />
+              <Image src="/gamezop-logo-dark.avif" fill alt="logo_image" loading="lazy" />
             </Link>
           </div>
           <SearchBox />

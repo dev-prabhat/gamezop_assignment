@@ -22,7 +22,8 @@ const AnimatedImages = ({ src, slides }: AnimatedImagesProps) => {
           className="object-cover"
           src={`/banner-big-without-text-${slidesNumber}.avif`}
           fill
-          alt="bannerImage"
+          alt={`bannerImage_${slidesNumber}`}
+          loading="lazy"
         />
       </div>
       <div className="absolute top-[15%] md:top-[20%] left-[10%]">
@@ -55,6 +56,7 @@ const AnimatedImages = ({ src, slides }: AnimatedImagesProps) => {
             ${currentImageIndex % 3 === 1 ? "animate-bounce" : ""} 
             ${currentImageIndex % 3 === 2 ? "animate-pulse" : ""}`}
           fill
+          loading="lazy"
         />
       </div>
     </div>

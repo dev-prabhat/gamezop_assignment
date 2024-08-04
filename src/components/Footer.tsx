@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="p-3 max-w-[1440px]">
         <div className="pt-[13px] pb-[19px]">
           <div className="relative w-[108px] aspect-[27/7]">
-            <Image src="/gamezop-logo-dark.avif" fill alt="logo_image" />
+            <Image src="/gamezop-logo-dark.avif" fill alt="logo_image" loading="lazy" />
           </div>
         </div>
         <div className="w-full h-[1px] bg-[var(--border-color-secondary)] mb-[15px]" />
