@@ -1,10 +1,26 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { Game } from "@/types";
+import NotSelected from "@/SVGImages/NotSelected";
+import { useState } from "react";
+import Selected from "@/SVGImages/Selected";
 
 export const GameCard = (cardDetails: Game) => {
+  const [selected, setSelected] = useState<boolean>(false);
   return (
-    <div key={cardDetails.code} className="max-w-[100px] md:max-w-[187px] mb-5">
+    <div
+      key={cardDetails.code}
+      className="max-w-[100px] md:max-w-[187px] mb-5 relative"
+    >
+      <button
+        className="absolute top-2 right-2 z-10 "
+        type="button"
+        onClick={() => setSelected((prev) => !prev)}
+      >
+        {selected ? <Selected /> : <NotSelected />}
+      </button>
       <Link href={cardDetails.url} target="_blank">
         <div className="relative w-[100px] md:w-[187px] aspect-[1] rounded-3xl overflow-hidden">
           <Image
