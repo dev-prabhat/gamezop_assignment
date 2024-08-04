@@ -6,9 +6,9 @@ export const GameCard = (cardDetails: Game) => {
   return (
     <div key={cardDetails.code} className="max-w-[100px] md:max-w-[187px] mb-5">
       <Link href={cardDetails.url} target="_blank">
-        <div className="relative w-[100px] md:w-[187px] aspect-[1]">
+        <div className="relative w-[100px] md:w-[187px] aspect-[1] rounded-3xl overflow-hidden">
           <Image
-            className="object-cover rounded-3xl"
+            className="object-cover"
             src={cardDetails.assets.square}
             fill
             alt={cardDetails.name.en}

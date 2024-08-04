@@ -17,9 +17,9 @@ const AnimatedImages = ({ src, slides }: AnimatedImagesProps) => {
   }, [src.length]);
   return (
     <div className="flex flex-wrap justify-center my-3 relative w-full">
-      <div className="relative w-[220px] md:w-[300px] lg:w-[450px] 2xl:w-[580px] aspect-[5/2]">
+      <div className="relative w-[220px] md:w-[300px] lg:w-[450px] 2xl:w-[580px] aspect-[5/2] rounded-lg md:rounded-3xl overflow-hidden">
         <Image
-          className="object-cover rounded-lg md:rounded-3xl"
+          className="object-cover"
           src={`/banner-big-without-text-${slidesNumber}.avif`}
           fill
           alt="bannerImage"
