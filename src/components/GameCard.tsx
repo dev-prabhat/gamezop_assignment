@@ -15,8 +15,10 @@ export const GameCard = (cardDetails: Game) => {
       className="max-w-[100px] md:max-w-[187px] mb-5 relative"
     >
       <button
-        className="absolute top-2 right-2 z-10 "
+        className="absolute top-2 right-2 z-10 w-8 h-8"
         type="button"
+        aria-label='favourite'
+        name="favourite_icon"
         onClick={() => setSelected((prev) => !prev)}
       >
         {selected ? <Selected /> : <NotSelected />}
