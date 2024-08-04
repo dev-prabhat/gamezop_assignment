@@ -31,7 +31,7 @@ const AnimatedImages = ({ src, slides }: AnimatedImagesProps) => {
             <div className="w-[100px] md:w-[150px] lg:w-[250px] text-xs lg:text-xl 2xl:text-[28px] 2xl:leading-[42px] text-[#fcdc36] font-black">
               Quizzop Play fun Quizzes from 20+
             </div>
-            <button className="w-[80px] md:w-[100px] lg:w-[180px] h-5 md:h-8 lg:h-[40px] text-xs lg:text-base font-black bg-[#421091] text-[#fcdc36] rounded-full flex justify-center items-center mt-2 2xl:mt-5">
+            <button type="button" className="w-[80px] md:w-[100px] lg:w-[180px] h-5 md:h-8 lg:h-[40px] text-xs lg:text-base font-black bg-[#421091] text-[#fcdc36] rounded-full flex justify-center items-center mt-2 2xl:mt-5">
               PLAY NOW
             </button>
           </div>
@@ -40,7 +40,7 @@ const AnimatedImages = ({ src, slides }: AnimatedImagesProps) => {
             <div className="w-[100px] md:w-[150px] lg:w-[250px] text-xs lg:text-xl 2xl:text-[28px] 2xl:leading-[42px] text-[#590819] font-black">
               Randomly Select From 350+ Games
             </div>
-            <button className="w-[80px] md:w-[100px] lg:w-[180px] h-5 md:h-8 lg:h-[40px] text-xs lg:text-base font-black bg-[#590819] text-[var(--default-white-color)] rounded-full flex justify-center items-center mt-2 2xl:mt-5">
+            <button type="button" className="w-[80px] md:w-[100px] lg:w-[180px] h-5 md:h-8 lg:h-[40px] text-xs lg:text-base font-black bg-[#590819] text-[var(--default-white-color)] rounded-full flex justify-center items-center mt-2 2xl:mt-5">
               PLAY NOW
             </button>
           </div>
