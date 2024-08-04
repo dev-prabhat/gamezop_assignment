@@ -11,11 +11,12 @@ This repository contains the Gamezop assignment project. It showcases a game lis
   - [Technologies Used](#technologies-used)
   - [Development Process](#development-process)
   - [Decision-Making Journey](#decision-making-journey)
-<!-- Getting-Started
-Usage
-Contributing
-License
-Contact -->
+  - [Getting Started](#getting-started)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [Fork the Project](#fork-the-project)
+  - [License](#license)
+  - [Contact](#contact)
 
 ## Introduction
 
@@ -55,3 +56,65 @@ This project is designed to demonstrate proficiency in frontend development by b
 - Styling: Decided to use both TailwindCSS for utility-first styling and plain CSS for layouts, root styles and CSS variables, combining the strengths of both approaches.
 - TypeScript: Used TypeScript to catch potential errors early and improve code maintainability.
 - Component Structure: Structured components to be reusable and modular, facilitating easier maintenance and scalability.
+
+## Getting Started
+
+To get a local copy up and running, follow these simple steps.
+
+Prerequisites
+Ensure you have the following installed:
+
+- Node.js (v14.x or later)
+- npm (v6.x or later) or yarn (v1.x or later)
+
+Installation
+
+- Clone the repo
+    git clone https://github.com/dev-prabhat/gamezop_assignment.git
+
+- Navigate to the project directory
+    cd gamezop_assignment
+
+- Install dependencies
+    npm install
+    or
+    yarn install
+
+## Usage
+
+- To run the development server:
+    npm run dev
+    or
+    yarn dev
+    Open http://localhost:3000 with your browser to see the result.
+
+- To build the project for production:
+    npm run build
+    or
+    yarn build
+
+- To start the production server:
+    npm start
+    or
+    yarn start
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+## Fork the Project
+
+- Create your Feature Branch (git checkout -b feature/AmazingFeature)
+- Commit your Changes (git commit -m 'Add some AmazingFeature')
+- Push to the Branch (git push origin feature/AmazingFeature)
+- Open a Pull Request
+  
+## License
+
+Distributed under the MIT License. See LICENSE for more information.
+
+## Contact
+
+Prabhat - [your email] - [your LinkedIn]
+
+Project Link: https://github.com/dev-prabhat/gamezop_assignment
