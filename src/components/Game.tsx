@@ -1,4 +1,4 @@
-import getAllGames from "@/lib/getAllGames";
+import getAllGames from "@/getAllGames";
 import { GameCard } from "./GameCard";
 import Icon from "@/SVGImages/Icon";
 import { Games } from "@/types";

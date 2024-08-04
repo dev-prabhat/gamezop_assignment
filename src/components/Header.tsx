@@ -3,7 +3,7 @@ import Link from "next/link";
 import CategoryPill from "./CategoryPill";
 import Carousel from "./Carousel";
 import SearchBox from "./SearchBox";
-import getAllGames from "@/lib/getAllGames";
+import getAllGames from "@/getAllGames";
 import { separateGamesByCategory } from "@/utils";
 import { Games } from "@/types";
 

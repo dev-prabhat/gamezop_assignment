@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import getAllGames from "@/lib/getAllGames";
+import getAllGames from "@/getAllGames";
 import Icon from "@/SVGImages/Icon";
 import { CategoryPageProps, Games } from "@/types";
 import { separateGamesByCategory } from "@/utils";
