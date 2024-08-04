@@ -24,6 +24,7 @@ const config: Config = {
         'spin-slow': 'spin 3s linear infinite',
         'bounce': 'bounce 2s infinite',
         'pulse': 'pulse 2s infinite',
+        'spin': 'spin 1s linear infinite',
       },
       keyframes: {
         spin: {
