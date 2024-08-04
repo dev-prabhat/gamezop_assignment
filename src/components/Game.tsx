@@ -17,15 +17,15 @@ export default async function Game() {
       {!!Object.keys(categorizedGames).length &&
         Object.keys(categorizedGames).map((ele, index) => (
           <div key={ele} className="w-full">
-            <div className="hidden 2xl:flex justify-between ">
+            <div className="flex justify-center sm:justify-between flex-wrap gap-4">
               {index % 2 === 1 &&
                 Object.keys(imagesAnimation).map((ele) => (
-                  <div key={ele}>
+                  <div key={ele} className="w-fit">
                     <AnimatedImages key={ele} src={imagesAnimation[ele]} slides={ele} />
                   </div>
                 ))}
             </div>
-            <div className="flex flex-col">
+            <div id={ele} className="flex flex-col">
               <div className="flex items-center gap-1 mb-4 md:mb-7">
                 <span className="w-[26px] h-[26px] fill-[var(--default-white-color)]">
                   <Icon name={ele} />
