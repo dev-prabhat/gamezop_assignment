@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function SearchBox() {
 
   return (
-    <div className="flex  relative w-[200px] md:w-[50%] gap-1">
+    <div className="flex  relative w-[200px] md:w-[50%] gap-1 md:gap-2">
       <span className="absolute left-2 translate-y-[30%]  md:translate-y-[50%]">
         <Search />
       </span>
