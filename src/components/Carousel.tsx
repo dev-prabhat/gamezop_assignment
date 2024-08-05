@@ -16,8 +16,8 @@ const Carousel = ({ children }: CarouselProp) => {
       navigation
       loop
     >
-      {children.map((ele) => (
-        <SwiperSlide className="!w-fit mr-4" key={ele.props}>
+      {children.map((ele, index) => (
+        <SwiperSlide className="!w-fit mr-4" key={index}>
           {ele}
         </SwiperSlide>
       ))}
