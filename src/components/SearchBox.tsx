@@ -9,7 +9,7 @@ export default function SearchBox() {
         <Search />
       </span>
       <input
-        className="px-7 w-full h-8 md:h-10 rounded-full bg-[var(--default-dark-blue-color)]"
+        className="px-7 w-full h-8 md:h-10 rounded-full bg-[var(--default-dark-blue-color)] text-[var(--default-white-color)]"
         placeholder="Search for game"
       />
       <CricInfo />
