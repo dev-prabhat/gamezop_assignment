@@ -18,7 +18,7 @@ export default function CategoryPill({ name }: CategoryPillProps) {
         <h4>{name}</h4>
       </Link>
       <Link
-        href={`#${name}`}
+        href={`/#${name}`}
         className="px-6 py-2 rounded-3xl cursor-pointer w-max font-medium hidden md:flex bg-[var(--default-dark-blue-color)] text-[var(--default-white-color)] items-center"
       >
         {name && (
